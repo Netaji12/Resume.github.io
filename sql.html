@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sql</title>
+    <link rel="icon" href="SQLlogo.jpeg">
+    <style>
+        body{
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+        dt{
+            background-color: bisque;
+        }
+        table{
+            border: 3px solid rgb(0, 4, 255);
+        }
+        hr{
+            height: 4px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>SQL Syllabus</legend>
+            <br>
+            <div>
+                <dt>Introduction</dt>
+                <dd>We have learnt about Relational Database
+                    Management System (RDBMS) and purpose in the previous chapter. There are many RDBMS such
+                    as MySQL, Microsoft SQL Server, PostgreSQL, Oracle, etc. that allow us to create a database
+                    consisting of relations and to link one or more relations for efficient querying to store, retrieve
+                    and manipulate data on that database. In this chapter, we will learn how to create, populate and
+                    query database using MySQL.</dd><hr>
+                    <br>
+                <dt>Structured Query Language (SQL)</dt>
+                <dd>SQL is easy to learn as the statements comprise of
+                    descriptive English words and are not case sensitive.
+                    We can create and interact with a database using SQL
+                    in an efficient and easy way. The benefit with SQL is
+                    that we don’t have to specify how to get the data from
+                    the database. Rather, we simply specify what is to be
+                    retrieved, and SQL does the rest. Although called a query
+                    language, SQL can do much more besides querying.
+                    SQL provides statements for defining the structure of
+                    the data, manipulating data in the database, declare
+                    constraints and retrieve data from the database in
+                    various ways, depending on our requirements.
+                    In this chapter, we will learn how to create a database
+                    using MySQL as the RDBMS software. We will create a
+                    database called StudentAttendance that we
+                    had identified in the previous chapter. We will also learn
+                    how to populate database with data, manipulate data in
+                    that and retrieve data from the database through SQL
+                    queries.</dd><hr>
+                    <br>
+                <dt>Data Types and
+                    Constraints in MySQL</dt>
+                <dd>Data type indicates the type of data value that an
+                    attribute can have. The data type of an attribute decides
+                    the operations that can be performed on the data of
+                    that attribute. For example, arithmetic operations can
+                    be performed on numeric data but not on character
+                    data. Commonly used data types in MySQL are numeric
+                    types, date and time types, and string (character and
+                    byte) types</dd>
+                    <br>
+                    <br>
+                    <table border="">
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Descaription</th>
+                        </tr>
+                        <tr>
+                            <td>CHAR(n)</td>
+                            <td>Specifies character type data of length n where n could be any value from 0 to
+                                255. CHAR is of fixed length, means, declaring CHAR (10) implies to reserve
+                                spaces for 10 characters. If data does not have 10 characters (for example,
+                                ‘city’ has four characters), MySQL fills the remaining 6 characters with spaces
+                                padded on the right.</td>
+                        </tr>
+                        <tr>
+                            <td>VARCHAR(n)</td>
+                            <td>Specifies character type data of length ‘n’ where n could be any value from 0
+                                to 65535. But unlike CHAR, VARCHAR is a variable-length data type. That is,
+                                declaring VARCHAR (30) means a maximum of 30 characters can be stored
+                                but the actual allocated bytes will depend on the length of entered string. So
+                                ‘city’ in VARCHAR (30) will occupy the space needed to store 4 characters only</td>
+                        </tr>
+                        <tr>
+                            <td>INT</td>
+                            <td>INT specifies an integer value. Each INT value occupies 4 bytes of storage. The
+                                range of values allowed in integer type are -2147483648 to 2147483647. For
+                                values larger than that, we have to use BIGINT, which occupies 8 bytes.</td>
+                        </tr>
+                        <tr>
+                            <td>FLOAT</td>
+                            <td>Holds numbers with decimal points. Each FLOAT value occupies 4 bytes</td>
+                        </tr>
+                        <tr>
+                            <td>DATE</td>
+                            <td>The DATE type is used for dates in 'YYYY-MM-DD' format. YYYY is the 4 digit
+                                year, MM is the 2 digit month and DD is the 2 digit date. The supported range
+                                is '1000-01-01' to '9999-12-31'.</td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <br>
+                    <br>
+                <dt>Data Types and
+                    Constraints in MySQL</dt>
+                <dd>Constraints are certain types of restrictions on the data
+                    values that an attribute can have. They are used to
+                    ensure the accuracy and reliability of data. However, it
+                    is not mandatory to define constraint for each attribute
+                    of a table.</dd>
+                    <br>
+                    <br>
+                    <table border="">
+                        <tr>
+                            <th>Constraint</th>
+                            <th>Descaription</th>
+                        </tr>
+                        <tr>
+                            <td>NOT NULL</td>
+                            <td>Ensures that a column cannot have NULL values where NULL means missing/
+                                unknown/not applicable value</td>
+                        </tr>
+                        <tr>
+                            <td>UNIQUE</td>
+                            <td>Ensures that all the values in a column are distinct/unique</td>
+                        </tr>
+                        <tr>
+                            <td>DEFAULT</td>
+                            <td>A default value specified for the column if no value is provided</td>
+                        </tr>
+                        <tr>
+                            <td>PRIMARY KEY</td>
+                            <td>The column which can uniquely identify each row or record in a table</td>
+                        </tr>
+                        <tr>
+                            <td>FOREIGN KEY</td>
+                            <td>The column which refers to value of an attribute defined as primary key in another
+                                table.</td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <br>
+                    <br>
+                <dt>SQL for Data Definition</dt>
+                <dd>SQL provides commands for defining the relation
+                    schemas, modifying relation schemas and deleting
+                    relations. These are called Data Definition Language
+                    (DDL) through which the set of relations are specified,
+                    including their schema, data type for each attribute, the
+                    constraints as well as the security and access related
+                    authorisations.
+                    Data definition starts with the create statement. This
+                    statement is used to create a database and its tables
+                    (relations). Before creating a database, we should be
+                    clear about the number of tables in the database, the
+                    columns (attributes) in each table along with the data
+                    type of each column. This is how we decide the relation
+                    schema.</dd><br>
+                    <ul>Create Database</ul>
+                    <ul>Create Table</ul>
+                    <ul>Describe Table</ul>
+                    <ul>Alter Table</ul>
+                    <ul>Drop Statement</ul>
+                    <ul>Use</ul>
+                    <ul>Rename</ul>
+                    <ul>Show</ul>
+                    <hr>
+                    <br>
+                <dt>SQL for Data
+                    Manipulation</dt>
+                <dd>In the previous section, we created the database
+                    StudentAttendance having three relations STUDENT,
+                    GUARDIAN and ATTENDANCE. When we create a table,
+                    only its structure is created but the table has no data.
+                    To populate records in the table, INSERT statement is
+                    used. Similarly, table records can be deleted or updated
+                    using SQL data manipulation statements.
+                    Data Manipulation using a database means either
+                    retrieval (access) of existing data, insertion of new data,
+                    removal of existing data or modification of existing data
+                    in the database. 
+                    </dd>
+                    <ul>Insert</ul>
+                    <ul>Update</ul>
+                    <ul>Delete</ul>
+                    <hr>
+                    <br>
+                <dt>SQL for Data Query</dt>
+                <dd>So far we have learnt how to create database as well
+                    as to store and manipulate data. We are interested to
+                    store data in a database as it is easier to retrieve data
+                    in future from databases in whatever way we want.
+                    The Structured Query Language (SQL) has efficient
+                    mechanisms to retrieve data stored in multiple tables
+                    in a MySQL database (or any other RDBMS). The
+                    user enters the SQL commands called queries where
+                    the specific requirements for data to be retrieved are
+                    provided. The SQL statement SELECT is used to retrieve
+                    data from the tables in a database and is also called
+                    query statement.</dd>
+                    <ul>Select</ul>
+                <dt>Data Updation and
+                    Deletion</dt>
+                <dd>Updation and deletion of data are also the parts of SQL
+                    data manipulation. In this section, we are going to apply
+                    these two data manipulation methods.</dd>
+                    <dt>Data Updation</dt>
+                    <dd>We may need to make changes in the value(s) of one or
+                        more columns of existing records in a table. For example,
+                        we may require some changes in address, phone number
+                        or spelling of name, etc. The UPDATE statement is used to
+                        make such modifications in the existing data.
+                        Syntax:
+                        UPDATE table_name
+                        SET attribute1 = value1, attribute2 = value2, ...</dd>
+                    <dt>Data Deletion</dt>
+                    <dd>The DELETE statement is used to delete one or more
+                        record(s) from a table.
+                        Syntax:
+                        DELETE FROM table_name
+                        WHERE condition;</dd>
+        
+            </div>
+        </fieldset>
+    </div>
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA</title>
+    <link rel="icon" href="javalogo.png">
+    <Style>
+
+    </Style>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Java Syllabus</legend>
+            <dl>
+                <br>
+                <dt>Introduction</dt><br>
+                <dd>ava is a popular, high-level, general-purpose programming language that was first released by Sun Microsystems in 1995. It has since become one of the most widely used programming languages, known for its portability, platform 
+                    independence, and robustness. Java's slogan, "Write Once, Run Anywhere" (WORA), emphasizes its ability to run on various platforms without modification.</dd>
+                <hr>
+                <br>
+                <dt>Features of Java</dt>
+                <dd><dt>Platform Independence:</dt> 
+                    <dd>Java achieves platform independence by using the Java Virtual Machine (JVM). Code written in Java is compiled into bytecode, which can be executed on any device or operating system with a compatible JVM.</dd>
+                    <dt>Object-Oriented:</dt> Java is primarily an object-oriented language, which means it focuses on the creation and manipulation of objects. Everything in Java is an object, including basic data types like integers and characters.
+                    
+                    <dt>Strongly Typed:</dt> <dd>Java is a strongly typed language, meaning that data types must be declared explicitly, and type safety is enforced at compile time. This helps catch many errors before the code is executed.</dd>
+                    
+                    <dt>Garbage Collection:</dt> <dd> includes an automatic memory management system, known as garbage collection, which helps manage memory and prevents common programming errors like memory leaks.</dd>
+                    
+                    <dt> Standard Library:</dt><dd> Java has a rich standard library that includes classes and methods for a wide range of tasks, from file handling to network communication.</dd>
+                    
+                    <dt>Multi-threading:</dt><dd> Java has built-in support for multi-threading, making it suitable for developing concurrent and parallel applications.</dd>
+                    
+                    <dt>Security:</dt> <dd>Java's design includes security features to protect against various vulnerabilities, making it a popular choice for building secure applications.</dd>
+                    
+                    <dt>Portability:</dt> <dd>Java applications can be run on different platforms with little to no modification, which is a significant advantage for cross-platform development.</dd>
+                    
+                    <dt>Community and Ecosystem:</dt> <dd>Java has a vast and active developer community, which has contributed to a thriving ecosystem of libraries, frameworks, and tools for various applications.</dd>
+                    
+                    <dt>Popular Use Cases: </dt><dd>Java is commonly used in web development (Java EE), mobile app development (Android), scientific computing, enterprise applications, game development, and more.</dd>
+               </dd>
+               <hr>
+               <br>
+                <dt>Main Method</dt>
+                <dd>The main method in java is a entry point for a java Program, It is method thatis executed when the programm is run. The main method has a specific signature,which is a set of parameters and return type that must be followed in orderfor the proogrm to executed properly.
+                 Signature : public static void main(String[] args) </dd>
+                 <hr>
+                 <br>
+                <dt>Data Type</dt>
+                <dd>the data type is a classification of a types of data that inform the compiler or interpreter how the programmer intends to use the data example of the data type include integer floating point numbers characters and string
+                    the type of data determines the amount of memory allocated for the data and the operation that can be performed on it.</dd>
+                    <br>
+                    <dt>Types of Data Type</dt>
+                    <dt>Primitive</dt>
+                    <dd>byte,short,int,long,float,double,boolean,and char</dd>
+                    <dt>Non-primitive</dt>
+                    <dd>String, Array and classes</dd>
+                    <br>
+                    <pre>
+                        Typecasting
+                        <dt>Implicit Typecasting</dt>
+                        <dd>This type of Type casting occurs automatically when a smaller data type convert to the larger data type without any explicit instruction from the programmer for example converting an integer to long</dd>
+                        byte --> short --> int --> long --> float --> double
+                                    char --> |
+
+                        <br>
+                        <dt>Explicit Typecasting</dt>
+                        <dd>This type of Type casting required explicit instruction from the programmer to convert variable from one data type to another particular when a larger data type is converted to the smaller data type for example converting a doubled to an int using the int operator</dd>
+                        byte <-- short <-- int <-- long <-- float <--double
+                                    char  <--|
+                    </pre>
+                </dd>
+                <dt>Oprater</dt>
+                <br>
+                <dd>
+                    <dt>Arithmetic operators</dt>
+                    <dd>
+                        <table border="">
+                            <tr>
+                                <th>Operator</th>
+                                <th>Name</th>
+                                <th>Descaription</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <td>+</td>
+                                <td>Addition</td>
+                                <td> Adds together two values</td>
+                                <td> x + y</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>Subtraction</td>
+                                <td> Subtracts one value from another</td>
+                                <td>x - y</td> 	    	       	        
+                            </tr>
+                            <tr> 	    	    	                   
+                                <td>*</td>
+                                <td>Multiplication</td>
+                                <td>Multiplies two values</td>
+                                <td> x * y</td>
+                            </tr>
+                            <tr>
+                                <td>/</td>
+                                <td>Division</td>
+                                <td>Divides one value by another</td>
+                                <td>x / y</td>
+                            </tr>
+                            <tr>
+                                <td>%</td>
+                                <td>Modulus	Returns</td>
+                                <td>The division remainder</td>
+                                <td> x % y	</td>
+                            </tr>
+                            <tr>
+                                <td>++</td>
+                                <td> Increment</td>
+                                <td>Increases the value of a variable by 1</td>
+                                <td>++x</td>
+                            </tr>
+                            <tr>
+                                <td>--</td>
+                                <td>Decrement</td>
+                                <td>Decreases the value of a variable by 1</td>
+                                <td>--x </td>
+                            </tr>
+                        </table>
+                </dd>
+                <br>
+                    <dt>Assignment operators</dt>
+                        <dd>
+                            <table border="">
+                                <tr>
+                                    <th> Operator</th>
+                                    <th>Example</th>
+                                    <th> Same As</th>
+                                </tr>
+                                <tr> 	
+                                    <td>=</td>
+                                    <td>x = 5</td>
+                                    <td>x = 5</td>
+                                </tr>
+                                <tr>
+                                    <td>+=</td>
+                                    <td>x += 3</td>
+                                    <td>x = x + 3</td>
+                                </tr>
+                                <tr>
+                                    <td>-=</td>
+                                    <td>x -= 3</td>
+                                    <td>x = x - 3</td>
+                                </tr>
+                                <tr>
+                                    <td>*=</td>
+                                    <td>x *= 3</td>
+                                    <td>x = x * 3</td>
+                                </tr>
+                                <tr>
+                                    <td>/=</td>
+                                    <td>x /= 3</td>
+                                    <td>x = x / 3</td>
+                                </tr>
+                                <tr>
+                                    <td>%=</td>
+                                    <td>x %= 3</td>
+                                    <td>x = x % 3</td>
+                                </tr>
+                                <tr>
+                                    <td>&=</td>
+                                    <td>x &= 3</td>
+                                    <td>x = x & 3</td>
+                                </tr>
+                                <tr>
+                                    <td>|=</td>
+                                    <td>x |= 3</td>
+                                    <td>x = x | 3</td>
+                                </tr>
+                                <tr>
+                                    <td>^=</td>
+                                    <td>x ^= 3</td>
+                                    <td>x = x ^ 3</td>
+                                </tr>
+                                <tr>
+                                    <td>>>=</td>
+                                    <td>x >>= 3</td>
+                                    <td>x = x >> 3</td>
+                                </tr>
+                                <tr>
+                                    <td><<=</td>
+                                    <td>x <<= 3</td>
+                                    <td>x = x << 3</td>
+                                </tr>
+                        </table>
+                        </dd>
+                        <br>
+                    <dt>Comparison operators</dt>
+                    <dd>
+                    <table border="">
+
+                        <tr>
+                            <th> Operator</th>
+                            <th>Example</th>
+                            <th>Example</th>
+                        </tr>
+                       
+                        <tr>
+                            <td>==</td>
+                            <td>Equal to</td>
+                            <td>x == y</td>
+                        </tr>
+                        <tr>
+                            <td>!=</td>
+                            <td>Not equal</td>
+                            <td></td>x != y</td>
+                        </tr>
+                        <tr>
+                            <td>></td>
+                            <td>Greater than</td>
+                            <td>x > y</td>
+                        </tr>
+                        <tr>
+                            <td><</td>
+                            <td>Less than</td>
+                            <td>x < y</td>
+                        </tr>
+                        <tr>
+                            <td>>=</td>
+                            <td>Greater than or equal to</td>
+                            <td>x >= y</td>
+                        </tr>
+                        <tr>
+                            <td><=</td>
+                            <td>Less than or equal to</td>
+                            <td>x <= y</td>
+                    </table>
+                    </dd>
+                    <br>
+                    <dt>Logical operators</dt>
+                    <dd>
+                        <table border="">
+                            <tr>
+                                <th>Operator</th>
+                                <th>Name</th>
+                                <th>Descaription</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <td>&&</td>
+                                <td>Logical and	</td>
+                                <td> Returns true if both statements are true</td>
+                                <td> x < 5 &&  x < 10</td>
+                            </tr>
+                            <tr>
+                                <td>||</td>
+                                <td>Logical or</td>
+                                <td> Returns true if one of the statements is true</td>
+                                <td>x < 5 || x < 4</td> 	    	       	        
+                            </tr>
+                            <tr> 	    	    	                   
+                                <td>!</td>
+                                <td>Logical not		</td>
+                                <td>Reverse the result, returns false if the result is true</td>
+                                <td>!(x < 5 && x < 10)</td>
+                            </tr>
+                        </table>
+                    </dd>
+                </dd>
+                <hr>
+                <br>
+                <dt>Loops</dt><br>
+                <dd>
+                    Looping in programming languages is a feature which facilitates the execution of a set of instructions/functions repeatedly while some condition evaluates to true. Java provides three ways for executing the loops. While all the ways provide similar basic functionality, they differ in their syntax and condition checking time.
+                    
+                       java provides Three types of Conditional statements this second  type is loop statement .</dd>
+                    <br>
+                       <dt>while loop:</dt>
+                    <dd>A while loop is a control flow statement that allows code to be executed repeatedly based on a given Boolean condition. The while loop can be thought of as a repeating if statement. </dd>
+                    <pre>
+                        Syntax :
+                    
+                        while (boolean condition)
+                        {
+                           loop statements...
+                        }
+                    </pre>
+                    <br>
+                    <dt>for loop</dt>
+                    <dd>for loop provides a concise way of writing the loop structure. Unlike a while loop, a for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping. 
+                    </dd>
+                    <pre> 
+                        Syntax:
+                    
+                        for (initialization condition; testing condition;increment/decrement)
+                        {
+                            statement(s)
+                        }
+                    </pre>
+                    <br>
+                    <dt>do while</dt>
+                    <dd>do while loop is similar to while loop with only difference that it checks for condition after executing the statements, and therefore is an example of Exit Control Loop. 
+                    </dd>
+                    <pre>  
+                        Syntax:
+                        
+                        do
+                        {
+                            statements..
+                        }
+                        while (condition);
+                    </pre>
+                </dd>
+                <hr>
+                <br>
+                <dt>Object Oriented Programming(OOP)</dt><br>
+                <dd>Is a programming paradigm that focus on using objects and classes to model Real world entities and their behaviour</dd>
+                <pre>
+                    Orientation------> Perspective------>The way of 
+                                                        looking Somthing
+                </pre>
+                <hr>
+                <br>
+                <dt>Variables</dt><br>
+                <dd> A variable is a location in memory that is used to store a value of a specific data types such as an integer, a floating point  number, or a character</dd>
+                <br>
+                <dt>types of Variables</dt>
+                <ul>Local</ul>
+                <ul>Instance</ul>
+                <ul>Static</ul>
+                <hr>
+                <br>
+                <dt>Array</dt>
+                <dd>In Java, an array is a data structure that allows you to store a fixed number of elements of the same data type in a contiguous memory location. 
+                    Each element in an array is accessed by an index, which starts at 0 for the first element and goes up to one less than the size of the array.
+                    Here's how you declare and initialize an array in Java:</dd><br>
+                    <dt>Regular Array (Rectangular Array):</dt>
+                    <dd>
+                        A regular array, often referred to as a rectangular array, is a two-dimensional array where all rows have the same number of columns.
+                        In a regular array, each row has an equal number of elements.
+                        This type of array is easy to visualize as a matrix with rows and columns.
+                        Accessing elements in a regular array is straightforward using two indices: one for the row and one for the column.
+                        Regular arrays are common when you need to work with tabular data or grids with consistent row and column sizes.
+                        Example of a regular array in Java:
+                        <pre>
+                        int[][] regularArray = {
+                            {1, 2, 3},
+                            {4, 5, 6},
+                            {7, 8, 9}
+                        };
+                        </pre>
+                        </dd>
+                        <dt>Ragged Array (Irregular Array):</dt>
+                        <dd>
+                        A ragged array, also known as an irregular array, is a two-dimensional array where rows can have varying numbers of columns.
+                        In a ragged array, the rows do not all have the same number of elements, making it look like an uneven matrix.
+                        Accessing elements in a ragged array is a bit more complex, as you need to account for the varying row lengths.
+                        Ragged arrays are useful when you have data structures where each sub-array can have a different number of elements. For example, when dealing with datasets where not all records have the same number of fields.
+                        Example of a ragged array in Java:
+                        <pre>
+                        int[][] raggedArray = {
+                            {1, 2},
+                            {3, 4, 5, 6},
+                            {7},
+                            {8, 9, 10}
+                        };
+                        </pre>
+                        In a ragged array, you'll often use nested loops to iterate through the rows and columns, and you'll need to check the length of each row to avoid going out of bounds. Ragged arrays are particularly useful when you 
+                        want to conserve memory by not allocating space for empty or unnecessary elements in every row, which can be the case in irregular datasets.</dd>
+                    </dd>
+                    <hr>
+                    <br>
+                <dt>String</dt>
+                <dd>In Java, a string is a sequence of characters. It is an object that represents a series of characters, and it is part of the Java Standard Library. Strings are widely used in Java programs to manipulate and work with
+                    text. Here are some key characteristics and operations related to strings in Java:
+                </dd><br>
+                <dt>String Object:</dt>
+                <dd> In Java, strings are represented as objects of the java.lang.String class. You can create a string using the String class constructor, or you can use string literals, which are enclosed in double quotes, like "Hello, World".
+                    String str = "Hello, World";</dd><br>
+                <dt>Immutable:</dt><dd>Strings in Java are immutable, which means that their content cannot be changed after they are created. When you perform operations on a string, you actually create a new string with the modified content.
+                   <pre> String original = "Hello";
+                    String modified = original + ", World";</pre>
+                </dd>
+                <br>
+                <dt>String Concatenation:</dt>
+                <dd> You can concatenate strings using the + operator or the concat() method.
+                    <pre>
+                    String str1 = "Hello";
+                    String str2 = " World";
+                    String result = str1 + str2; 
+                    </pre>
+                    </dd>
+                    <dt>String Length:</dt><dd> You can find the length of a string using the length() method.
+                        <pre>
+                        String text = "This is a string.";
+                        int length = text.length();
+                        </pre>
+                    </dd>
+                <dt>Encapsulation</dt>
+                <dd>Encapsulation is one of the fundamental concepts in object-oriented programming (OOP) and is a key principle in Java and many other programming languages. It refers to the bundling of data (attributes or fields) and methods 
+                    (functions) that operate on the data into a single unit called a class. The primary goal of encapsulation is to hide the internal details of an object and provide a controlled and well-defined interface for interacting with that object.
+                     Encapsulation helps in achieving several important objectives in software development:
+
+                   <dt>Data Hiding:</dt><dd>Encapsulation allows you to hide the internal state of an object from the outside world. By making the fields (data) of a class private, you prevent direct access to them from outside the class.
+                     Access to the data is provided through methods, which can enforce rules and constraints.
+                
+                    With encapsulation, you can control how the data is accessed and modified. This allows you to implement validation and error checking, ensuring that the data remains in a valid and consistent state.
+                </dd>
+                <dt>Modularity:</dt><dd>
+                     Encapsulation promotes modularity in your code. By bundling related data and methods into a single class, you create self-contained and reusable units that are easier to maintain and extend.
+                    </dd>
+                <dt>Flexibility:</dt><dd>Encapsulation makes it easier to change the internal implementation of a class without affecting the code that uses the class. This is because external code relies on the public interface provided by the class, not its internal details.
+                    
+                    In Java, encapsulation is achieved through access modifiers such as private, protected, and public. Here's a brief explanation of these access modifiers:
+                    </dd>
+                    <dt>Private:</dt> <dd>Fields and methods declared as private are only accessible within the same class. They are not visible to other classes, even subclasses.
+                    </dd>
+                    <dt>Protected: </dt><dd>ields and methods declared as protected are accessible within the same class, its subclasses, and other classes in the same package.
+                    </dd>
+                    <dt>Default (no modifier):</dt><dd> Fields and methods without any access modifier are only accessible within the same package.</dd>
+                   <dt>Public:</dt> <dd> Fields and methods declared as public are accessible from anywhere in the program.       
+                    By marking fields as private and providing public methods to access and modify those fields, you can control how external code interacts with the object, ensuring data integrity and allowing for future changes without breaking existing code. Encapsulation is a fundamental 
+                    concept in OOP that promotes code organization, reusability, and maintainability.   </dd>
+                </dd>
+                <hr>
+                <br>
+              
+                <dt>Static</dt>
+                <dd>In Java, the static keyword is used to declare members (variables and methods) that belong to the class itself rather than to a specific instance of the class. Here are the two main uses of static in Java:</dd>
+                    <dt>Static Variables (Class Variables): </dt>
+                    <dd>When a variable is declared as static within a class, it becomes a class variable. This means that all instances (objects) of the class share the same copy of this variable. Class variables are created and 
+                        initialized only once, and changes made to them affect all instances of the class.</dd>
+                        <pre>
+                            public class MyClass {
+                                static int count = 0; // A static variable
+                            }
+                        </pre>
+                    <dt>Static Methods:</dt>
+                    <dd>When a method is declared as static, it becomes a class method. This means that you can call this method using the class name rather than an instance of the class. Static methods are often used for utility 
+                        functions or operations that do not depend on the state of the class.</dd>
+                        <pre>
+                            public class MathUtils {
+                                public static int add(int a, int b) { // A static method
+                                    return a + b;
+                                }
+                            }
+                        </pre>
+                    <ol>Static members are associated with the class itself and not with instances of the class.</ol>
+                    <ol>Static members can be accessed without creating an instance of the class.</ol>
+                    <ol>Static methods cannot directly access non-static (instance) variables and methods. They operate on a class level and don't have access to the state of any specific instance.</ol>
+                    <ol>Static members are initialized when the class is loaded by the Java Virtual Machine (JVM) and exist throughout the program's execution.</ol>
+                    <dd>Static members are useful for creating utility classes, constants, and for managing shared resources and data among instances of a 
+                        class. However, they should be used with care, as overuse of static members can lead to tight coupling and make your code less object-oriented.</ol>
+                    </dd>
+                    <hr>
+                    <br>
+                    <br>
+                <dt>Inheritance</dt>
+                <dd>Inheritance is one of the fundamental concepts in object-oriented programming (OOP) and plays a central role in the Java programming language. Inheritance 
+                    in Java allows you to create a new class that is a modified or specialized version of an existing class. This new class, called a subclass or derived class, inherits attributes and behaviors (fields and methods) from another class, known as the superclass or base class.
+                    <br>
+                    <dt>Example :</dt>>
+                    <pre>
+                        public class Animal {
+                        String name;
+                        
+                        public Animal(String name) {
+                            this.name = name;
+                        }
+                        
+                        public void eat() {
+                            System.out.println(name + " is eating.");
+                        }
+                    }
+                    </pre>
+                </dd>
+                <dt>Polymorphism</dt>
+                <dd></dd>
+                <dt>Abstraction</dt>
+                <dd></dd>
+                <dt>Interface</dt>
+                <dd></dd>
+                <dt>Exception Handiling</dt>
+                <dd></dd>
+                <dt>Multitaskinng</dt>
+                <dd></dd>
+                <dt>Multithreading</dt>
+                <dd></dd>
+                <dt>Collections</dt>
+                <dd></dd>
+            </dl>
+        </fieldset>
+    </div>
+    
+</body>
+</html>
